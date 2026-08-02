@@ -1,0 +1,1730 @@
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    transition: 0.3s;
+}
+
+
+/* ================= HEADER CARD ================= */
+
+.header {
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    height: 70px;
+
+    margin: 12px auto 0;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+
+    position: sticky;
+    top: 12px;
+    z-index: 1000;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-area h2 {
+    font-size: 19px;
+    white-space: nowrap;
+}
+
+
+/* ================= HEADER RIGHT ================= */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* ================= THEME BUTTON ================= */
+
+.theme-btn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f2f2f2;
+
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* ================= HAMBURGER ================= */
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f2f2f2;
+
+    cursor: pointer;
+}
+
+.menu-btn span {
+    width: 19px;
+    height: 2px;
+
+    background: #111111;
+    border-radius: 5px;
+}
+
+
+/* ================= MENU ================= */
+
+.mobile-menu {
+    display: none;
+
+    position: fixed;
+
+    top: 92px;
+    right: 15px;
+
+    width: 185px;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    z-index: 2000;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu a {
+    padding: 11px 13px;
+
+    color: #111111;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.mobile-menu a:hover {
+    background: #f2f2f2;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 20px 35px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 80px);
+
+    line-height: 1;
+
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+
+#changingText {
+    transition: 0.25s;
+}
+
+.description {
+    max-width: 520px;
+
+    margin: auto;
+
+    color: #666666;
+
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.shop-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 22px;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    transition: 1s;
+}
+
+.shop-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-title p {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+}
+
+
+/* ================= GAMES ================= */
+
+.games-section {
+    padding: 1px 1%;
+    background: #f7f7f7;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+
+
+/* ================= GAMES CONTAINER ================= */
+
+.games-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    /* Laptop = 4 cards */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= GAME CARD ================= */
+
+.game-card {
+    width: 100%;
+    min-width: 0;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 1px solid #eeeeee;
+
+    overflow: hidden;
+
+    transition: 0.25s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ================= GAME IMAGE ================= */
+
+.game-image {
+    width: 100%;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eeeeee;
+
+    border-radius: 10px;
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+    overflow: hidden;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* ================= GAME TITLE ================= */
+
+.game-card h3 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+}
+
+
+/* ================= GAME DESCRIPTION ================= */
+
+.game-card p {
+    margin: 0;
+
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+/* ================= GAME BUTTON ================= */
+
+.game-card button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #111111;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ================================================= */
+/* ================= LAPTOP ======================== */
+/* ================================================= */
+
+@media (min-width: 769px) {
+
+    .games-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .game-image {
+        height: 160px;
+    }
+}
+
+
+/* ================================================= */
+/* ================= PHONE ========================= */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    .games-section {
+        padding: 35px 10px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    .section-title p {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+
+    /* 4 Cards ក្នុងមួយជួរ */
+
+    .games-container {
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 7px;
+
+        width: 100%;
+    }
+
+
+    /* Card */
+
+    .game-card {
+        padding: 6px;
+
+        border-radius: 9px;
+    }
+
+
+    /* Image */
+
+    .game-image {
+        height: 70px;
+
+        margin-bottom: 7px;
+
+        border-radius: 6px;
+
+        font-size: 30px;
+    }
+
+
+    /* Title */
+
+    .game-card h3 {
+        font-size: 10px;
+
+        margin-bottom: 3px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* Description */
+
+    .game-card p {
+        font-size: 7px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* Button */
+
+    .game-card button {
+        margin-top: 6px;
+
+        padding: 5px 2px;
+
+        font-size: 8px;
+
+        border-radius: 5px;
+    }
+}
+
+
+/* ================================================= */
+/* ================= SMALL PHONE =================== */
+/* ================================================= */
+
+@media (max-width: 400px) {
+
+    .games-container {
+        gap: 5px;
+    }
+
+    .game-card {
+        padding: 5px;
+    }
+
+    .game-image {
+        height: 60px;
+    }
+
+    .game-card h3 {
+        font-size: 9px;
+    }
+
+    .game-card p {
+        font-size: 6px;
+    }
+
+    .game-card button {
+        font-size: 7px;
+        padding: 4px 1px;
+    }
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    padding: 50px 20px 45px;
+}
+
+.contact-box {
+    max-width: 450px;
+
+    margin: auto;
+
+    padding: 18px;
+
+    border: 1px solid #f8f7fc;
+    border-radius: 13px;
+
+    text-align: center;
+}
+
+.contact-box p {
+    padding: 7px;
+    font-size: 14px;
+}
+
+
+/* ================= LOGIN ================= */
+
+.login-section {
+    padding: 45px 20px 50px;
+
+    background: #f7f7f7;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+
+    margin: auto;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 13px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.login-box input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+.login-box input:focus {
+    border-color: #111111;
+}
+
+.login-box button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #111111;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.register-text {
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+.register-text a {
+    color: #111111;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    padding: 35px 20px 18px;
+
+    background: #111111;
+    color: white;
+
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.footer-logo .logo {
+    width: 48px;
+    height: 48px;
+}
+
+.footer-logo h2 {
+    font-size: 18px;
+}
+
+.payment h3 {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 14px;
+}
+
+/* ================= PAYMENT METHOD ================= */
+
+
+.payment-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+.payment-logo {
+    width: 50px;
+    height: 30px;
+
+    padding: 2px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.payment-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+.copyright {
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #333333;
+
+    color: #999999;
+
+    font-size: 11px;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background: #111111;
+    color: #ffffff;
+}
+
+body.dark .header {
+    background: #181818;
+    border-color: #303030;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .logo {
+    background: #ffffff;
+}
+
+body.dark .theme-btn,
+body.dark .menu-btn {
+    background: #292929;
+}
+
+body.dark .menu-btn span {
+    background: #ffffff;
+}
+
+body.dark .mobile-menu {
+    background: #1c1c1c;
+    border-color: #333333;
+}
+
+body.dark .mobile-menu a {
+    color: #ffffff;
+}
+
+body.dark .mobile-menu a:hover {
+    background: #303030;
+}
+
+body.dark .games-section,
+body.dark .login-section {
+    background: #181818;
+}
+
+body.dark .game-card,
+body.dark .login-box {
+    background: #222222;
+    border-color: #333333;
+}
+
+body.dark .game-image {
+    background: #2d2d2d;
+}
+
+body.dark .game-card p,
+body.dark .description {
+    color: #aaaaaa;
+}
+
+body.dark .contact-box {
+    border-color: #333333;
+}
+
+body.dark .login-box input {
+    background: #292929;
+    color: white;
+    border-color: #444444;
+}
+
+body.dark .login-box button,
+body.dark .shop-btn {
+    background: white;
+    color: #111111;
+}
+
+body.dark .register-text {
+    color: #999999;
+}
+
+body.dark .register-text a {
+    color: white;
+}
+
+/* ================= MOBILE GAME CARDS - 3 PER ROW ================= */
+
+@media (max-width: 520px) {
+
+    .games-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .games-container {
+        display: grid;
+
+        /* 3 cards ក្នុងមួយជួរ */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 8px;
+
+        width: 100%;
+    }
+
+    .game-card {
+        width: 100%;
+        padding: 7px;
+
+        border-radius: 9px;
+    }
+
+    .game-image {
+        width: 100%;
+        height: 90px;
+
+        border-radius: 7px;
+
+        font-size: 28px;
+
+        margin-bottom: 7px;
+    }
+
+    .game-card h3 {
+        font-size: 11px;
+
+        margin-bottom: 3px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .game-card p {
+        font-size: 8px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .game-card button {
+        width: 100%;
+
+        margin-top: 7px;
+
+        padding: 6px 2px;
+
+        font-size: 9px;
+
+        border-radius: 5px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 750px) {
+
+    .games-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 450px;
+        padding-top: 35px;
+    }
+}
+
+
+
+/* ================= BANNER ALIGN WITH GAME CARDS ================= */
+
+.banner-section {
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0px;
+
+    /* ចន្លោះឆ្វេង និងស្តាំដូច Game Card */
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+/* ================= SWIPER ================= */
+
+.bannerSwiper {
+    width: 100%;
+    margin: 0 auto;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    padding-bottom: 20px;
+}
+
+
+/* ================= BANNER FRAME ================= */
+
+.banner-frame {
+    width: 100%;
+
+    padding: 5px;
+
+    border: 3px solid #56575c;
+
+    border-radius: 18px;
+
+    background: #47494d;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= BANNER IMAGE ================= */
+
+.banner-frame img {
+    width: 100%;
+
+    aspect-ratio: 16 / 6;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+
+/* ================= PHONE ================= */
+
+@media (max-width: 768px) {
+
+    .banner-section {
+        width: 100%;
+
+        padding-left: 1%;
+        padding-right: 1%;
+
+        margin: 0;
+    }
+
+    .bannerSwiper {
+        width: 100%;
+    }
+
+}
+
+
+/* ================= SMALL PHONE ================= */
+
+@media (max-width: 400px) {
+
+    .banner-section {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+}
+
+
+/* ================= SWIPER NAVIGATION - PREMIUM ================= */
+
+.bannerSwiper .swiper-button-prev,
+.bannerSwiper .swiper-button-next {
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    /* Glass Effect */
+    background: rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25),
+        inset 0 0 10px rgba(255, 255, 255, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+/* ================= ARROW ================= */
+
+.bannerSwiper .swiper-button-prev::after,
+.bannerSwiper .swiper-button-next::after {
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* ================= HOVER ================= */
+
+.bannerSwiper .swiper-button-prev:hover,
+.bannerSwiper .swiper-button-next:hover {
+
+    background: rgba(3, 149, 218, 0.85);
+
+    border-color: #ffffff;
+
+    transform: scale(1.1);
+
+    box-shadow:
+        0 0 15px rgba(3, 149, 218, 0.65),
+        0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================= ARROW HOVER ================= */
+
+.bannerSwiper .swiper-button-prev:hover::after {
+    transform: translateX(-2px);
+}
+
+.bannerSwiper .swiper-button-next:hover::after {
+    transform: translateX(2px);
+}
+
+
+/* ================= CLICK ================= */
+
+.bannerSwiper .swiper-button-prev:active,
+.bannerSwiper .swiper-button-next:active {
+
+    transform: scale(0.92);
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .bannerSwiper .swiper-button-prev,
+    .bannerSwiper .swiper-button-next {
+
+        width: 34px;
+        height: 34px;
+
+    }
+
+    .bannerSwiper .swiper-button-prev::after,
+    .bannerSwiper .swiper-button-next::after {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark .bannerSwiper .swiper-button-prev,
+body.dark .bannerSwiper .swiper-button-next {
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-color: rgba(255, 255, 255, 0.25);
+
+}
+
+body.dark .bannerSwiper .swiper-button-prev:hover,
+body.dark .bannerSwiper .swiper-button-next:hover {
+
+    background: rgba(3, 149, 218, 0.85);
+
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+
+/* =========================
+   SOCIAL BUTTON
+========================= */
+
+.social-btn {
+    width: 140px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 9px;
+
+    padding: 0 13px;
+
+    background: transparent;
+    color: #aaa;
+
+    border: 1.5px solid #555;
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+
+    color: #aaa;
+    background: transparent;
+    border: 1px solid #555;
+
+    color: #aaa;
+    background: transparent;
+    border: 1px solid #555;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+
+
+/* =========================
+   ICON
+========================= */
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+
+    display: block;
+    flex-shrink: 0;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* =========================
+   TELEGRAM
+========================= */
+
+.telegram:hover {
+    color: #229ED9;
+    border-color: #229ED9;
+
+    background: rgba(34, 158, 217, 0.08);
+
+    box-shadow: 0 0 16px rgba(34, 158, 217, 0.35);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   DISCORD
+========================= */
+
+.discord:hover {
+    color: #5865F2;
+    border-color: #5865F2;
+
+    background: rgba(88, 101, 242, 0.08);
+
+    box-shadow: 0 0 16px rgba(88, 101, 242, 0.35);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   FACEBOOK
+========================= */
+
+.facebook:hover {
+    color: #1877F2;
+    border-color: #1877F2;
+
+    background: rgba(24, 119, 242, 0.08);
+
+    box-shadow: 0 0 16px rgba(24, 119, 242, 0.35);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   ICON HOVER
+========================= */
+
+.social-btn:hover .social-icon {
+    transform: scale(1.12);
+}
+
+
+/* =========================
+   CLICK / TOUCH
+========================= */
+
+.social-btn:active {
+    transform: scale(0.94);
+}
+
+.telegram:active {
+    color: #fff;
+    background: #229ED9;
+    border-color: #229ED9;
+}
+
+.discord:active {
+    color: #fff;
+    background: #5865F2;
+    border-color: #5865F2;
+}
+
+.facebook:active {
+    color: #fff;
+    background: #1877F2;
+    border-color: #1877F2;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .social-links {
+        align-items: flex-start;
+        gap: 8px;
+
+        margin-left: 0;
+    }
+
+    .social-btn {
+        width: 140px;
+        height: 40px;
+
+        font-size: 12px;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+/* Telegram */
+.telegram {
+    background: #182f3a;
+    border-color: #229ED9;
+}
+
+.telegram:hover {
+    background: #229ED9;
+    color: #fff;
+}
+
+
+/* Discord */
+.discord {
+    background: #252a55;
+    border-color: #5865F2;
+}
+
+.discord:hover {
+    background: #5865F2;
+    color: #fff;
+}
+
+
+/* Facebook */
+.facebook {
+    background: #19365f;
+    border-color: #1877F2;
+}
+
+.facebook:hover {
+    background: #1877F2;
+    color: #fff;
+}
+
+
+
+.footer-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 15px;
+}
+
+.left-line {
+    width: 35px;
+    height: 1px;
+    background: #555;
+}
+
+.right-line {
+    flex: 1;
+    height: 1px;
+    background: #555;
+}
+
+.contact-text {
+    color: #54668f;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+
+.stock-line-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.stock-line-title::before {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #555;
+}
+
+.stock-line-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #555;
+}
+
+.stock-line-title span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #0395da;
+    white-space: nowrap;
+}
+
+/* ================= GAME CARDS GRID ================= */
+
+.games-container {
+    width: calc(200% - 2px);
+    margin-left: 0;
+    margin-right: 4px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+}
+
+
+/* ================= GAME CARD ================= */
+
+.game-card {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* ================= GAME IMAGE ================= */
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 12px;
+}
+
+
+/* ================= LAPTOP ================= */
+
+@media (min-width: 769px) {
+
+    .games-container {
+        width: calc(100% - 4px);
+        margin-right: 4px;
+
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+}
+
+
+/* ================= PHONE ================= */
+
+@media (max-width: 768px) {
+
+    .games-container {
+        width: calc(100% - 4px);
+        margin-right: 4px;
+
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .game-card {
+        padding: 4px;
+    }
+
+    .game-card img {
+        height: 65px;
+        border-radius: 7px;
+    }
+
+    .game-card h3 {
+        font-size: 10px;
+    }
+
+    .game-card p {
+        font-size: 8px;
+    }
+
+    .game-card button {
+        font-size: 8px;
+        padding: 5px;
+    }
+
+}
+
+
+/* ================= PAYMENT METHOD - LIGHT MODE ================= */
+
+.payment {
+    width: 100%;
+    margin-top: 25px;
+    color: #111111;
+}
+
+.payment h3 {
+    color: #111111;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+/* Logos នៅជាជួរដេក */
+.payment-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Logo */
+.payment-logo {
+    width: 55px;
+    height: 34px;
+
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 7px;
+
+    overflow: hidden;
+    flex-shrink: 0;
+
+    transition: 0.25s ease;
+}
+
+.payment-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ================= PAYMENT METHOD - DARK MODE ================= */
+
+body.dark .payment {
+    color: #ffffff;
+}
+
+body.dark .payment h3 {
+    color: #ffffff;
+}
+
+body.dark .payment-logo {
+    background: #ffffff;
+    border-color: #444444;
+}
+
+/* ================= PAYMENT LOGOS ================= */
+
+.payment-logos {
+display: flex;
+
+
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+
+gap: 6px;
+
+width: max-content;
+
+
+}
+
+/* ប្រអប់ Logo */
+.payment-logo {
+width: 52px;
+height: 32px;
+
+
+padding: 3px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: #fffdfd;
+
+/* កោងខាងឆ្វេង និងខាងស្តាំ */
+border-radius: 9px;
+
+overflow: hidden;
+
+flex-shrink: 0;
+
+border: 1px solid rgba(255, 255, 255, 0.15);
+
+box-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.18);
+
+transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+
+}
+
+/* រូប Logo */
+.payment-logo img {
+width: 100%;
+height: 100%;
+
+object-fit: contain;
+
+display: block;
+
+border-radius: 6px;
+
+
+}
+
+/* Hover */
+.payment-logo:hover {
+transform: translateY(-2px);
+
+
+box-shadow: 0 2px 7px rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* ================= STOCK / CONTACT TITLE ================= */
+
+/* LIGHT MODE */
+.stock-line-title::before,
+.stock-line-title::after,
+.footer-contact .left-line,
+.footer-contact .right-line {
+    background: #d6d6d6;
+}
+
+.stock-line-title span {
+    color: #0395da;
+}
+
+.contact-text {
+    color: #0395da;
+}
+
+
+/* ================= DARK MODE ================= */
+
+body.dark .stock-line-title::before,
+body.dark .stock-line-title::after,
+body.dark .footer-contact .left-line,
+body.dark .footer-contact .right-line {
+    background: #555555;
+}
+
+body.dark .stock-line-title span {
+    color: #0395da;
+}
+
+body.dark .contact-text {
+    color: #ffffff;
+}
+
+/* ================= STOCK & CONTACT ================= */
+
+.stock-line-title span,
+.contact-text {
+    color: #111111;
+}
+
+/* DARK MODE */
+body.dark .stock-line-title span,
+body.dark .contact-text {
+    color: #ffffff;
+}
