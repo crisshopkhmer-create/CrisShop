@@ -1728,3 +1728,38 @@ body.dark .stock-line-title span,
 body.dark .contact-text {
     color: #ffffff;
 }
+
+/* ================= PHONE GAME CARD IMAGE FIX ================= */
+
+@media (max-width: 768px) {
+
+    .game-card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .game-card img {
+        width: 100%;
+        height: 80px;
+        display: block;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+
+    .game-image {
+        width: 100%;
+        height: 80px;
+        margin: 0 0 7px 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+
+    .game-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 7px;
+    }
+}
